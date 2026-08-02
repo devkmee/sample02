@@ -6,7 +6,7 @@ export default function LEFT() {
     console.log('data:', data);
     const cha1 = data.find((char) => char.id === 'char_1');
     const cha2 = data.find((char) => char.id === 'char_2');
-    console.log('cha1:', cha1);
+    console.log('cha1: ', cha1);
     console.log('cha2:', cha2);
 
     return (
