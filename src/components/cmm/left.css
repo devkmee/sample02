@@ -1,5 +1,12 @@
+@font-face {
+    font-family: 'Ghanachocolate';
+    src: url('../../assets/fonts/Ghanachocolate.ttf') format('truetype');
+    font-display: swap;
+}
+
 ol {
     font-size: 25px;
-    margin-bottom: 10px;
+    font-family: 'Ghanachocolate';
+    margin-bottom: 20px;
     cursor: pointer;
 }
