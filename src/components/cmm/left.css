@@ -5,12 +5,15 @@
 }
 
 ol {
+    color: gray;
     font-size: 25px;
     font-family: 'Ghanachocolate', serif;
     margin-bottom: 20px;
     cursor: pointer;
 }
 
-ol:hover {
-    color: '#280956';
+ol:hover,
+ol.active {
+    color: #280956;
+    font-weight: bold;
 }
