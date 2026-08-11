@@ -32,16 +32,16 @@ export default function LEFT() {
                 }}
             >
                 <ul style={{ textAlign: 'left', padding: '20px' }}>
-                    <ol id="0" onClick={() => handleClick(0)} style={{ color: page === '0' ? 'red' : 'black' }}>
+                    <ol id="0" onClick={() => handleClick(0)} style={{ color: page === '0' ? '#280956' : 'gray' }}>
                         1. Intro
                     </ol>
-                    <ol id="1" onClick={() => handleClick(1)} style={{ color: page === '1' ? 'red' : 'black' }}>
+                    <ol id="1" onClick={() => handleClick(1)} style={{ color: page === '1' ? '#280956' : 'gray' }}>
                         2. {cha2.nameKor}
                     </ol>
-                    <ol id="2" onClick={() => handleClick(2)} style={{ color: page === '2' ? 'red' : 'black' }}>
+                    <ol id="2" onClick={() => handleClick(2)} style={{ color: page === '2' ? '#280956' : 'gray' }}>
                         3. {cha1.nameKor}
                     </ol>
-                    <ol id="3" onClick={() => handleClick(3)} style={{ color: page === '3' ? 'red' : 'black' }}>
+                    <ol id="3" onClick={() => handleClick(3)} style={{ color: page === '3' ? '#280956' : 'gray' }}>
                         4. 관계 및 서사
                     </ol>
                 </ul>
