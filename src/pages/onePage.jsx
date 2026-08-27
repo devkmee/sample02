@@ -1,7 +1,12 @@
+import LEFT from '../components/cmm/Left.jsx';
+
 export default function OnePage() {
     return (
-        <div>
-            <h1>One Page</h1>
-        </div>
+        <>
+            <LEFT></LEFT>
+            <div>
+                <h1>One Page</h1>
+            </div>
+        </>
     );
 }

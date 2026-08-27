@@ -1,0 +1,12 @@
+.yl {
+    color: rgb(229, 229, 128);
+}
+th {
+    padding: 0.5rem;
+    width: 150px;
+    text-align: left;
+}
+td {
+    padding: 0.5rem;
+    text-align: left;
+}

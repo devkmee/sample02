@@ -7,14 +7,27 @@ export default function LEFT() {
     const navigate = useNavigate();
     const page = searchParams.get('page');
 
-    console.log('data:', data);
     const cha1 = data.find((char) => char.id === 'char_1');
     const cha2 = data.find((char) => char.id === 'char_2');
-    console.log('cha1: ', cha1);
-    console.log('cha2:', cha2);
 
-    const handleClick = (id) => {
-        navigate(`/detail?page=${id}`);
+    const handleClick = (page) => {
+        let url = '';
+        switch (page) {
+            case 0:
+                url = '/';
+                break;
+            case 1:
+                url = `/detail?id=${cha2.id}`;
+                break;
+            case 2:
+                url = `/detail?id=${cha1.id}`;
+                break;
+            case 3:
+                url = '/relation';
+                break;
+        }
+        // navigate(`/$[pageName?page=${id}`)
+        navigate(`${url}`);
     };
 
     return (
@@ -36,10 +49,10 @@ export default function LEFT() {
                         1. Intro
                     </ol>
                     <ol id="1" onClick={() => handleClick(1)} className={page === '1' ? 'active' : ''}>
-                        2. {cha2.nameKor}
+                        2. {cha2?.nameKor}
                     </ol>
                     <ol id="2" onClick={() => handleClick(2)} className={page === '2' ? 'active' : ''}>
-                        3. {cha1.nameKor}
+                        3. {cha1?.nameKor}
                     </ol>
                     <ol id="3" onClick={() => handleClick(3)} className={page === '3' ? 'active' : ''}>
                         4. 관계 및 서사
